@@ -465,6 +465,12 @@
 .how__text p{
   color:var(--light);
 }
+
+
+
+
+
+
 /* MOBILE VIEW IN HOW TO */
 @media screen and (max-width:500px){
   .how__wrapper {
@@ -481,7 +487,6 @@
     font-size: 3rem;
     font-weight:600;
     text-align:center;
-   
   }
   .how__text p{
     color: var(--light);
@@ -493,9 +498,12 @@
   }
 }
 
+
+
+
 /* RECOMMENDED PLANS DESKTOP VIEW */
 .recommended{
-  background:var(--light);
+  background:#fbf3e9;
 }
 .recommended__wrapper {
   display: grid;
@@ -515,7 +523,7 @@
 
 .recommended__text h5 {
   color: var(--primary);
-  font-weight:700;
+  font-weight:750;
   font-size:4rem;
   max-width:45rem;
   margin: 0;
@@ -523,30 +531,60 @@
 }
 .recommended__text p {
   font-size:1.5rem;
-  font-weight: 550;
+  font-weight: 500;
 }
 ul.bttn{
   display:flex;
   gap:3rem;
-  justify-content:center center;
+  justify-content:center;
+  align-items:center;
 }
-.bttn:last-child {
-  background:red;
+.recommended__wrapper ul.bttn li:last-child a {
+  background: var(--light);
+  padding: .6rem 5.6rem;
+  display:inline-block;
+  border-radius: 5rem;
+  border: 1px solid var(--primary);
+  color:#134A8C;
+  font-size:1.5rem;
+  font-weight:600;
+  transition: 0.5s ease;
 }
+.recommended__wrapper ul.bttn li:last-child a:hover {
+  background: var(--primary);
+  border-color: var(--light);
+  color:var(--light);
+  transition: 0.5s ease;
+}
+
+
 
 /* MOBILE VIEW */
 @media screen and (max-width:500px){
+  .recommended{
+    margin-top:-2rem;
+  }
   .recommended__text {
+    background-color:#fbf3e9;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform:translateY(6rem);
   }
-  
+  .recommended__text h5{
+    font-size:3.5rem;
+  }
   .recommended__text p {
     font-size: 1.5rem;
-    font-weight: 550;
+    font-weight: 500;
     text-align: center;
+    margin:3rem;
+  }
+  .recommended__wrapper ul.bttn{
+    display:flex;
+    gap:1.5rem;
+    flex-direction:column;
   }
 }
 
