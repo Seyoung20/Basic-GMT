@@ -334,7 +334,91 @@
   .banner__faq a{
     justify-content:center;
   }
+  /* .banner__text{
+    display:flex;
+    gap:1rem;
+  } */
 }
+
+/* OFFER SECTION */
+.offer{
+  background:;
+  background-size:100%;
+  height:80vh;
+  background-position:center center;
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+.offer__text{
+  max-width:65rem;
+  display:flex;
+  flex-direction: column;
+  gap:4rem;
+}
+.offer__text h2{
+  font-size:5rem;
+  color:var(--primary);
+  font-weight:600;
+}
+.offer__text p{
+  color:var(--dark);
+  font-size:1.8rem;
+}
+.offer__text a{
+  max-width:18rem;
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+/* .offer__price{
+  background: red;
+  width:fit-content;
+  position:absolute;
+  right:30rem;
+  top:25rem;
+  line-height:30px;
+  //transform: translate(100rem, -20rem);
+}
+.offer__price h3{
+  font-size:4rem;
+  font-weight:600;
+}
+.offer__price__bot h4{
+  font-size:3.5rem;
+  font-weight:500;
+}
+.offer__price__bot h3{
+  font-size:10rem;
+  font-weight:60;
+  position: relative;
+  right:-10rem;
+}
+//cents and per day
+.offer_cents h4{
+ margin:.5rem;
+} */
+@media screen and (max-width:500px){
+  .offer__text h2{
+    font-size:3rem;
+    text-align:center;
+  }
+  .offer__text p{
+    font-size:1.5rem;
+    font-weight:550;
+    text-align:justify;
+  }
+  .offer__text a {
+  justify-content:center;
+  font-size:1rem;
+  padding:1rem 1.2rem;
+  border-radius: 5rem;
+  width: 100%;
+  margin:0 auto;
+  }
+}
+
+
 /* REPEATABLE PATTERNS */
 :root{
     --light:#ffffff;
