@@ -418,7 +418,7 @@ margin:12rem;
 .offer__text a {
   justify-content: center;
   font-size: 1.3rem;
-  padding: 1rem 16rem;
+  padding: 1rem 15rem;
   border-radius: 5rem;
 }
 .offer__text h2 {
@@ -486,6 +486,9 @@ margin:12rem;
     font-size: 3rem;
     font-weight:600;
     text-align:center;
+  }
+  .how__text a.btn{
+    padding: 1rem 17rem;
   }
   .how__text p{
     color: var(--light);
